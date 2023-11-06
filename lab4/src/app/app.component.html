@@ -1,0 +1,7 @@
+<h3>Введіть ПІБ студента:</h3>
+<input [(ngModel)]="name" placeholder="name"><br>
+<h3>Введіть оцінку:</h3>
+<input [(ngModel)]="grade" type="number"><br><br>
+<button (click)="addStudent()">Додати студента</button>
+
+<child-comp [studentName]="names" [studentGrade]="grades"></child-comp>
