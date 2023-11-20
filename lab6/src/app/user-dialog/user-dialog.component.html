@@ -1,0 +1,9 @@
+<mat-dialog-content>
+    <p>ID: {{ data.id }}  </p>
+    <p>Назва: {{ data.title }}</p>
+    <p>Виконано: {{ data.completed}}</p>
+  </mat-dialog-content>
+  <mat-dialog-actions class="dialog-actions">
+    <button mat-button (click)="onAddToFavorites()">Додати до вподобаних</button>
+    <button mat-button (click)="onClose()">Закрити</button>
+  </mat-dialog-actions>
