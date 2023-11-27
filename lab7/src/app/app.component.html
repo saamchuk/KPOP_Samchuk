@@ -1,0 +1,48 @@
+<form [formGroup]="printForm" (ngSubmit)="onSubmit()">
+  <label for="paperType">Найменування папіру:</label>
+  <select formControlName="paperType" id="paperType">
+    <option value="Звичайний">Звичайний</option>
+    <option value="Матовий">Матовий</option>
+    <option value="Глянцевий">Глянцевий</option>
+  </select><br><br>
+
+  <label for="productType">Найменування продукції:</label>
+  <select formControlName="productType" id="productType">
+    <option value="Бірка для одягу">Бірка для одягу</option>
+    <option value="Документ">Документ</option>
+    <option value="Рекламний плакат">Рекламний плакат</option>
+  </select><br><br>
+
+  <label for="format">Формат папіру:</label>
+  <select formControlName="format" id="format">
+    <option value="А0">А0</option>
+    <option value="А1">А1</option>
+    <option value="А2">А2</option>
+    <option value="А3">А3</option>
+    <option value="А4">А4</option>
+    <option value="А5">А5</option>
+  </select><br><br>
+
+  <label for="inkType">Вид чорнил:</label>
+  <select formControlName="inkType" id="inkType">
+    <option value="Кольоровий">Кольоровий</option>
+    <option value="Чорно-білий">Чорно-білий</option>
+  </select><br><br>
+
+  <label for="numberOfSheets">Кількість листків:</label>
+  <input type="text" formControlName="numberOfSheets" id="numberOfSheets"><br><br>
+
+  <label for="numberOfCopies">Кількість екземплярів:</label>
+  <input type="text" formControlName="numberOfCopies" id="numberOfCopies"><br><br>
+
+  <label for="numberOfSides">Кількість сторін:</label>
+  <select formControlName="numberOfSides" id="numberOfSides">
+    <option value="1">1</option>
+    <option value="2">2</option>
+  </select><br><br>
+
+  <label for="numberOfMaster">Кількість мастер плівки:</label>
+  <input type="text" formControlName="numberOfMaster" id="numberOfMaster"><br><br>
+
+  <button type="submit" [disabled]="!printForm.valid">Відправити</button>
+</form>
