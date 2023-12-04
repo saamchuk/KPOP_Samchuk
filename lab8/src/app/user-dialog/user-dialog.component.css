@@ -1,0 +1,18 @@
+
+:host {
+    display: block;
+  }
+  
+  .dialog-content {
+    text-align: center;
+  }
+  
+  .dialog-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px; 
+  }
+  
+  .dialog-actions button {
+    margin: 0 10px; 
+  }

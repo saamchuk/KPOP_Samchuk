@@ -1,0 +1,11 @@
+<mat-dialog-content>
+    <p>Ім'я: {{ data.name.first }} {{ data.name.last }} </p>
+    <p>Email: {{ data.email }}</p>
+    <p>Логін: {{ data.login.username}}</p>
+    <p>Пароль: {{ data.login.password }}</p>
+    <p>Контактний телефон: {{ data.phone }}</p>
+  </mat-dialog-content>
+  <mat-dialog-actions class="dialog-actions">
+    <button mat-button (click)="onAddToFavorites()">Додати до вподобаних</button>
+    <button mat-button (click)="onClose()">Закрити</button>
+  </mat-dialog-actions>
